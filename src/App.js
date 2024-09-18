@@ -5,18 +5,23 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
+      <h1>Lucas Gallo</h1>
+{/*         <img src={logo} className="App-logo" alt="logo" /> */}
+        <p>I´m back</p>
+        <ul>
+          <h3>Cursos</h3>
+          <li>Desarrollo Web</li>
+          <li>JavaScript</li>
+          <li>React</li>
+        </ul>
+{/*         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
     </div>
   );
