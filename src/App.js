@@ -3,18 +3,13 @@ import { Navbar } from "./components/Navbar/Navbar";
 
 function App() {
 
-  const productos = [
-    {
-      id: "1",
-      name: "Centolla",
-      tipe: "natural",
-      price: "$1.200",
-    },
-  ];
-
+  const contenido = "Welcome"
+  const estilo = {display: "flex", justifyContent: "center", alignItems: "center", fontSize: "50px", width: "50%", border: "5px solid black"}
+  
   return (
     <div>
       <Navbar />
+      <p style={estilo}>{contenido}</p>
     </div>
   );
 }

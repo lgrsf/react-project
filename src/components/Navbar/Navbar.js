@@ -1,7 +1,6 @@
 import './Navbar.scss'
 
 export const Navbar = (props) => {
-    const { itemsCart } = props;
     return (
         <header className="header">
             <div className="header__container">
