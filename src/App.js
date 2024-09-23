@@ -4,8 +4,20 @@ import './App.css';
 import { Navbar2 } from "./components/Navbar/Navbar2";
 import Servicios from './components/Servicios/Servicios';
 import { Nosotros } from './components/Nosotros/Nosotros';
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 
 function App() {
+
+  const profesor = {
+    nombre: "Mike Dane",
+    rol: "Profesor de React",
+    curso: "React"
+  }
+
+  const tutor = {
+    nombre: "Francis Mallman",
+    rol: "Tutor de React"
+  }
 
   const contenido = "Welcome"
   /* const estilo = { display: "flex", justifyContent: "center", alignItems: "center", fontSize: "50px", width: "50%", border: "5px solid black" } */
@@ -16,6 +28,9 @@ function App() {
       <Navbar2 />
       {/* <p style={estilo}>{contenido}</p> */}
       <p className='welcome'>{contenido}</p>
+      <ItemListContainer nombre={profesor.nombre}/>
+      <Nosotros titulo={"Hi " +profesor.nombre} content={"Este es el curso de " + profesor.curso} />
+      <Nosotros titulo="Hi everybody" content="Este es el contenido" />
       <Nosotros />
       <Servicios />
     </div>
