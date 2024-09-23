@@ -1,9 +1,9 @@
-
+import './Servicios.scss'
 
 const Servicios = () => {
 
     return (
-        <ul>
+        <ul className="servicios">
             <h2>Servicios</h2>
             <hr />
             <li>Asistencia</li>
