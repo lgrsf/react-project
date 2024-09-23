@@ -3,6 +3,7 @@ import './App.css';
 /* import { Navbar } from "./components/Navbar/Navbar"; */
 import { Navbar2 } from "./components/Navbar/Navbar2";
 import Servicios from './components/Servicios/Servicios';
+import { Nosotros } from './components/Nosotros/Nosotros';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Navbar2 />
       {/* <p style={estilo}>{contenido}</p> */}
       <p className='welcome'>{contenido}</p>
+      <Nosotros />
       <Servicios />
     </div>
   );
