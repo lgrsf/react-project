@@ -5,6 +5,7 @@ import { Navbar2 } from "./components/Navbar/Navbar2";
 import Servicios from './components/Servicios/Servicios';
 import { Nosotros } from './components/Nosotros/Nosotros';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
+import Container from './components/Container/Container';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
   }
 
   const clock = () => <div>The time is {new Date().toLocaleTimeString()}</div>
-  
+
   const contenido = "Welcome"
   /* const estilo = { display: "flex", justifyContent: "center", alignItems: "center", fontSize: "50px", width: "50%", border: "5px solid black" } */
 
@@ -26,7 +27,9 @@ function App() {
       {/* <p style={estilo}>{contenido}</p> */}
       <p className='clock'>{clock()}</p>
       <p className='welcome'>{contenido}</p>
-      <ItemListContainer nombre={profesor.nombre} />
+      <Container>
+        <ItemListContainer nombre={profesor.nombre} />
+      </Container>
       <Nosotros titulo={"Hi " + profesor.nombre} content={"Este es el curso de " + profesor.curso} />
       <Nosotros titulo="Hi everybody" content="Este es el contenido" />
       <Nosotros />

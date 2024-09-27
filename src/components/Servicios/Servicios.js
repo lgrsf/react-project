@@ -4,11 +4,11 @@ const Servicios = () => {
 
     return (
         <ul className="servicios">
-            <h2>Servicios</h2>
+            <h2>Services</h2>
             <hr />
-            <li>Asistencia</li>
-            <li>Salud</li>
-            <li>Nutrición</li>
+            <li>Assistance</li>
+            <li>Health</li>
+            <li>Nutrition</li>
         </ul>
     )
 }
