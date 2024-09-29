@@ -6,6 +6,7 @@ import Servicios from './components/Servicios/Servicios';
 import { Nosotros } from './components/Nosotros/Nosotros';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import Container from './components/Container/Container';
+import Counter from './components/Counter/Counter';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
     <div>
       {/* <Navbar /> */}
       <Navbar2 />
+      <Counter />
       {/* <p style={estilo}>{contenido}</p> */}
       <p className='clock'>{clock()}</p>
       <p className='welcome'>{contenido}</p>
