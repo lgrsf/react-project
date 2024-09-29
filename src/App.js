@@ -7,10 +7,11 @@ import { Nosotros } from './components/Nosotros/Nosotros';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import Container from './components/Container/Container';
 import Counter from './components/Counter/Counter';
+import Button from './components/Button/Button';
 
 function App() {
 
-  const profesor = {
+  const profesor = {  
     nombre: "John Dane",
     rol: "Profesor de React",
     curso: "React"
@@ -29,6 +30,7 @@ function App() {
       {/* <p style={estilo}>{contenido}</p> */}
       <p className='clock'>{clock()}</p>
       <p className='welcome'>{contenido}</p>
+      <Button />
       <Container>
         <ItemListContainer nombre={profesor.nombre} />
       </Container>
