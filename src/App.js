@@ -27,6 +27,7 @@ function App() {
       {/* <Navbar /> */}
       <Navbar2 />
       <Counter />
+      <Counter />
       {/* <p style={estilo}>{contenido}</p> */}
       <p className='clock'>{clock()}</p>
       <p className='welcome'>{contenido}</p>

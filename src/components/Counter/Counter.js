@@ -3,7 +3,7 @@ import './Counter.scss'
 
 export const Counter = () => {
 
-    let [contador, setContador] = useState(1)
+    let [contador, setContador] = useState(0)
     console.log(contador)
 
     // OPTION 1
