@@ -17,6 +17,7 @@ export const Counter2 = () => {
     return (
         <div className='counter2'>
             <h2>Counter</h2>
+            <h5>Count independently</h5>
             <hr />
             <p onClick={incrementar1}>{contador1}</p>
             <hr />

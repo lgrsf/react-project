@@ -33,7 +33,6 @@ function App() {
       <p className='clock'>{clock()}</p>
       <Example />
       <Counter />
-      <Counter />
       <Counter2 />
       <Counter3 />
       {/* <p style={estilo}>{contenido}</p> */}

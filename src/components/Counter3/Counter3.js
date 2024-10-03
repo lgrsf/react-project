@@ -13,6 +13,7 @@ export const Counter3 = () => {
     return (
         <div className='counter3'>
             <h2>Counter</h2>
+            <h5>Count simultaneously</h5>
             <hr />
             <p onClick={incrementar}>{contador}</p>
             <hr />
