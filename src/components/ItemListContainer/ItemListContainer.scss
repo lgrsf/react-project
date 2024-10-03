@@ -1,5 +1,7 @@
-.my-container {
-    max-width: 1100px;
+.container {
+    max-width: 500px;
+    border: 2px dotted rgb(111, 111, 126);
+    display: row;
     text-align: center;
     justify-content: center;
     align-items: center;

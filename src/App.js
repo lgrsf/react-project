@@ -35,7 +35,7 @@ function App() {
       <p className='welcome'>{contenido}</p>
       <Button />
       <Container>
-        <ItemListContainer nombre={profesor.nombre} />
+        <ItemListContainer nombre={profesor.nombre} curso={profesor.curso}/>
       </Container>
       <Nosotros titulo={"Hi " + profesor.nombre} content={"Este es el curso de " + profesor.curso} />
       <Nosotros titulo="Hi everybody" content="Este es el contenido" />
