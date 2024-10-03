@@ -8,7 +8,9 @@ import { ItemListContainer } from './components/ItemListContainer/ItemListContai
 import Container from './components/Container/Container';
 import Counter from './components/Counter/Counter';
 import Counter2 from './components/Counter2/Counter2';
+import Counter3 from './components/Counter3/Counter3';
 import Button from './components/Button/Button';
+import Example from './components/Example/Example';
 
 function App() {
 
@@ -27,12 +29,14 @@ function App() {
     <div>
       {/* <Navbar /> */}
       <Navbar2 />
+      <p className='welcome'>{contenido}</p>
+      <p className='clock'>{clock()}</p>
+      <Example />
       <Counter />
       <Counter />
       <Counter2 />
+      <Counter3 />
       {/* <p style={estilo}>{contenido}</p> */}
-      <p className='clock'>{clock()}</p>
-      <p className='welcome'>{contenido}</p>
       <Button />
       <Container>
         <ItemListContainer nombre={profesor.nombre} curso={profesor.curso}/>

@@ -18,7 +18,7 @@ export const ItemListContainer = ({ nombre }) => {
         <p>Welcome <br/>{nombre}</p>
         <Button
           variant="success"
-          onClick={() => (document.getElementById("demo").innerHTML = "Logged")}
+          onMouseEnter={() => (document.getElementById("demo").innerHTML = "Logged")}
         >
           Log in
         </Button>
