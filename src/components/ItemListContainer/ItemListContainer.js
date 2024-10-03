@@ -1,14 +1,28 @@
-import Button from 'react-bootstrap/Button';
-import './ItemListContainer.scss'
+import Button from "react-bootstrap/Button";
+import "./ItemListContainer.scss";
 
-export const ItemListContainer = ({nombre, curso}) => {
-    return (
-        <section className='container'>
-            <h2>Our products</h2>
-            <hr/>
-            <p>Welcome {nombre}</p>
-            <p>{curso}</p>
-            <Button variant="success">Click me</Button>
-        </section>
-    )
-}
+export const ItemListContainer = ({ nombre }) => {
+  const estilo = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "50px",
+    width: "50%",
+    border: "5px solid black",
+    margin: "50px auto",
+  };
+
+  return (
+    <div id="demo" style={estilo}>
+      <section>
+        <p>Welcome <br/>{nombre}</p>
+        <Button
+          variant="success"
+          onClick={() => (document.getElementById("demo").innerHTML = "Logged")}
+        >
+          Log in
+        </Button>
+      </section>
+    </div>
+  );
+};
