@@ -24,7 +24,6 @@ export const Counter = () => {
     return (
         <div className='counter' onClick={() => setContador(contador + 1)}>
             <h2>Counter</h2>
-            <h5>Count independently</h5>
             <hr />
             <p>{contador}</p>
         </div>
