@@ -11,6 +11,7 @@ import Counter2 from "./components/Counter2/Counter2";
 import Counter3 from "./components/Counter3/Counter3";
 import Button from "./components/Button/Button";
 import Example from "./components/Example/Example";
+import Props from "./components/Props/Props";
 
 function App() {
   const profesor = {
@@ -43,6 +44,7 @@ function App() {
       <p className="welcome">{contenido2.title}</p>
       <p style={estilo}>{contenido2.subtitle}</p>
       <p className="clock">{clock()}</p>
+      <Props text="Props example" text2="Another props example" />
       <Example />
       <Counter />
       <Counter2 />
