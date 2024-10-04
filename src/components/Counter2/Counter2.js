@@ -38,11 +38,9 @@ export const Counter2 = () => {
             <hr />
             <button className="btn btn-primary" onClick={incrementar}>CLICK ME</button>
             <h4>{contador1}</h4>
-            <p>Last click: {new Date().toLocaleString()}</p>
             <hr />
             <button className="btn btn-primary" onClick={decrementar}>CLICK ME</button>
             <h4>{contador2}</h4>
-            <p>Last click: {new Date().toLocaleString()}</p>
         </div>
     );
 }

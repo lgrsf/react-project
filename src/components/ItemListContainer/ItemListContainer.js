@@ -1,7 +1,7 @@
 import Button from "react-bootstrap/Button";
 import "./ItemListContainer.scss";
 
-export const ItemListContainer = ({ nombre }) => {
+export const ItemListContainer = ({ nombre, curso }) => {
   const estilo = {
     display: "flex",
     justifyContent: "center",
@@ -15,7 +15,7 @@ export const ItemListContainer = ({ nombre }) => {
   return (
     <div id="demo" style={estilo}>
       <section>
-        <p>Welcome <br/>{nombre}</p>
+        <p>Welcome <br/>{nombre} <br/>{curso}</p>
         <Button
           variant="success"
           onMouseEnter={() => (document.getElementById("demo").innerHTML = "Logged")}

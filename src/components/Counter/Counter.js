@@ -1,17 +1,16 @@
-import { useState } from 'react';
-import './Counter.scss'
+import { useState } from "react";
+import "./Counter.scss";
 
 export const Counter = () => {
+  let [contador, setContador] = useState(0);
+  console.log(contador);
 
-    let [contador, setContador] = useState(0)
-    console.log(contador)
-
-    // OPTION 1
-/*     const incrementar = () => {
+  // OPTION 1
+  /*     const incrementar = () => {
         setContador(contador + 1)
     } */
 
-/*     return (
+  /*     return (
         <div className='counter' onClick={incrementar}>
             <h2>Counter</h2>
             <hr />
@@ -19,15 +18,17 @@ export const Counter = () => {
         </div>
     ); */
 
+  // OPTION 2
+  const estilo = { fontSize: "50px" };
 
-    // OPTION 2
-    return (
-        <div className='counter' onClick={() => setContador(contador + 1)}>
-            <h2>Counter</h2>
-            <hr />
-            <p>{contador}</p>
-        </div>
-    );
+  return (
+    <div className="counter" onClick={() => setContador(contador + 1)}>
+      <h2>Counter</h2>
+      <hr />
+      <p style={estilo}>{contador}</p>
+      <p>Last click: {new Date().toLocaleString()}</p>
+    </div>
+  );
 };
 
 export default Counter;
