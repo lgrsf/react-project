@@ -30,6 +30,19 @@ function App() {
     fontSize: "30px",
   };
 
+  const estilo2 = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "30px",
+    fontWeight: "bold", 
+    backgroundColor: "black",
+    color: "white",
+    borderRadius: "10px",
+    maxWidth: "200px",
+    margin: "0 auto",
+  };
+
   const contenido2 = {
     title: "Welcome",
     subtitle: "This is my personal website",
@@ -43,6 +56,7 @@ function App() {
       {/* <p className='welcome'>{contenido}</p> */}
       <p className="welcome">{contenido2.title}</p>
       <p style={estilo}>{contenido2.subtitle}</p>
+      <p style={estilo2}>{contenido2.year}</p>
       <p className="clock">{clock()}</p>
       <Props text="Props example" text2="Another props example" />
       <Example />

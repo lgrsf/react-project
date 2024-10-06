@@ -7,9 +7,9 @@ export const Navbar = (props) => {
                 <h1 className="header__logo">Home</h1>
 
                 <nav className="header__navbar">
-                    <p className="header__navlink">Asistencia</p>
-                    <p className="header__navlink">Salud</p>
-                    <p className="header__navlink">Nutrición</p>
+                    <p className="header__navlink">Assistance</p>
+                    <p className="header__navlink">Health</p>
+                    <p className="header__navlink">Nutrition</p>
                 </nav>
             </div>
         </header>

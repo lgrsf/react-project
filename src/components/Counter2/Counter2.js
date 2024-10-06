@@ -18,28 +18,28 @@ export const Counter2 = () => {
         }
     }
 
-/*     const decrementar = () => {
+    const decrementar = () => {
         if (contador2 > 0) {
             setContador2(contador2 - 1)
         } else {
             setContador2(contador2)
             alert("Out of stock")
         }
-    } */
+    }
 
-    const decrementar = () => {
+/*     const decrementar = () => {
         contador2 > 0 ? setContador2(contador2 - 1) : setContador2(contador2)
-        }
+        } */
 
     return (
         <div className='counter2'>
             <h2>Counter</h2>
             <h5>Count independently</h5>
             <hr />
-            <button className="btn btn-primary" onClick={incrementar}>CLICK ME</button>
+            <button className="btn btn-primary" onClick={incrementar}>+</button>
             <h4>{contador1}</h4>
             <hr />
-            <button className="btn btn-primary" onClick={decrementar}>CLICK ME</button>
+            <button className="btn btn-primary" onClick={decrementar}>-</button>
             <h4>{contador2}</h4>
         </div>
     );

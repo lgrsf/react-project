@@ -10,9 +10,9 @@ export const Navbar2 = () => {
                 <Container>
                     <Navbar.Brand href="#home">Home</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Asistencia</Nav.Link>
-                        <Nav.Link href="#features">Salud</Nav.Link>
-                        <Nav.Link href="#pricing">Nutrición</Nav.Link>
+                        <Nav.Link href="#home">Assistance</Nav.Link>
+                        <Nav.Link href="#features">Health</Nav.Link>
+                        <Nav.Link href="#pricing">Nutrition</Nav.Link>
                     </Nav>
                     <FaShoppingCart href="#cart" cursor="pointer"/>
                 </Container>
