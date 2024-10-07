@@ -5,6 +5,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    align-content: center;
     margin: 50px auto;
     padding: 10px;
 }
@@ -14,14 +15,23 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    align-content: center;
+    padding: 10px 0;
+    margin: 10px auto;
+    background-color: rgb(219, 203, 203);
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .btnCounterLeft {
     display: flex;
     text-align: center;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    font-size: 30px;
     margin-right: 10px;
+    margin-bottom: 0;
     padding: 0 10px;
     cursor: pointer;
 }
@@ -30,9 +40,22 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    font-size: 30px;
     margin-left: 10px;
-    padding: 0 10px;
+    margin-bottom: 0;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.contador {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: 0;
+    padding: 0 10px 0 10px;
     cursor: pointer;
 }
 

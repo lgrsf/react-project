@@ -64,10 +64,10 @@ export const Counter2 = () => {
             <div id="demo" >
                 <span className='containerCounter'>
                     <h4 className="btnCounterLeft" onClick={decrementar}>-</h4>
-                    <h4>{contador1.contador1}</h4>
+                    <h4 className='contador'>{contador1.contador1}</h4>
                     <h4 className="btnCounterRight" onClick={incrementar}>+</h4>
                 </span>
-                <p>Stock: {contador1.stock}</p>
+                <h5>Stock: {contador1.stock}</h5>
                 <p>Last click: {contador1.date.toLocaleString()}</p>
             </div>
             <hr />
