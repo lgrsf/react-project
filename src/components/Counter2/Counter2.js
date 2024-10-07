@@ -46,7 +46,7 @@ export const Counter2 = () => {
     }
 
     const decrementar = () => {
-        if (contador1.stock < 10) {
+        if (contador1.contador1 > 0) {
             setContador1({
                 contador1: contador1.contador1 - 1,
                 date: new Date(),
