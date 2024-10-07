@@ -10,6 +10,8 @@ import Counter from "./components/Counter/Counter";
 import Counter2 from "./components/Counter2/Counter2";
 import Counter3 from "./components/Counter3/Counter3";
 import Button from "./components/Button/Button";
+import { SuperForm } from "./components/SuperForm/SuperForm";
+import { SuperButton } from "./components/SuperButton/SuperButton";
 import Example from "./components/Example/Example";
 import Props from "./components/Props/Props";
 
@@ -35,7 +37,7 @@ function App() {
     justifyContent: "center",
     alignItems: "center",
     fontSize: "30px",
-    fontWeight: "bold", 
+    fontWeight: "bold",
     backgroundColor: "black",
     color: "white",
     borderRadius: "10px",
@@ -59,6 +61,7 @@ function App() {
       <p style={estilo2}>{contenido2.year}</p>
       <p className="clock">{clock()}</p>
       <Props text="Props example" text2="Another props example" />
+      <SuperForm title="Render Props:" render={SuperButton}></SuperForm>
       <Example />
       <Counter />
       <Counter2 />
