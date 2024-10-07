@@ -3,7 +3,7 @@ import './Counter2.scss'
 
 export const Counter2 = () => {
 
-    const stock = 10
+    const stock = 3
 
     const [contador1, setContador1] = useState({
         contador1: 0,
@@ -19,7 +19,29 @@ export const Counter2 = () => {
                 stock: contador1.stock - 1
             })
         } else {
-            alert("Out of stock")
+            document.getElementById("demo").innerHTML =
+                `<p 
+                style=
+                "
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin: 10px auto;
+                color: white; 
+                font-weight: bold; 
+                font-size: 25px; 
+                background-color: red;
+                width: 200px;
+                heigth: 150px;
+                padding: 10px;
+                border-radius: 10px;
+                border: 2px solid red;
+                "
+                >Out of stock</p>
+                <a href="">Back</a>
+               `
+
         }
     }
 
@@ -39,15 +61,16 @@ export const Counter2 = () => {
         <section className='counter2'>
             <h1>Counter</h1>
             <hr />
-            <div className='containerCounter'>
-                <h4 className="btnCounterLeft" onClick={decrementar}>-</h4>
-                <h4>{contador1.contador1}</h4>
-                <h4 className="btnCounterRight" onClick={incrementar}>+</h4>
+            <div id="demo" >
+                <span className='containerCounter'>
+                    <h4 className="btnCounterLeft" onClick={decrementar}>-</h4>
+                    <h4>{contador1.contador1}</h4>
+                    <h4 className="btnCounterRight" onClick={incrementar}>+</h4>
+                </span>
+                <p>Stock: {contador1.stock}</p>
+                <p>Last click: {contador1.date.toLocaleString()}</p>
             </div>
-            <p>Stock: {contador1.stock}</p>
-            <p>Last click: {contador1.date.toLocaleString()}</p>
             <hr />
-
         </section>
     );
 
