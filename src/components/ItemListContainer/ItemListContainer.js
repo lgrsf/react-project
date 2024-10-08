@@ -14,21 +14,10 @@ export const ItemListContainer = ({ nombre, curso }) => {
   };
 
   return (
-    <div id="demo" style={estilo}>
+    <div id="test" style={estilo}>
       <section>
         <p>Welcome <br/>{nombre} <br/>{curso}</p>
-        <Button
-          variant="success"
-          onClick={() => (document.getElementById("demo").innerHTML = 
-          `
-          <div style={}>
-          <Button>Log out</Button>
-          </div>
-          ` 
-          )}
-        >
-          Log in
-        </Button>
+        <Button variant="success" onClick={() => (document.getElementById("test").innerHTML = `Welcome ${nombre}`)}>Log in</Button>
       </section>
     </div>
   );
