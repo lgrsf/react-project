@@ -12,7 +12,6 @@ export const ItemListContainer = ({ nombre, curso }) => {
     margin: "50px auto",
     padding: "20px 0 30px 0",
   };
-
   return (
     <div id="test" style={estilo}>
       <section>

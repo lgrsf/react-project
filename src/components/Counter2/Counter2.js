@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Counter2.scss'
 
 export const Counter2 = () => {
@@ -56,6 +56,21 @@ export const Counter2 = () => {
             alert("Deleted")
         }
     }
+
+    /*     useEffect(() => {
+            console.log("Componente montado")
+    
+        }, []) */ // Se coloca un array vacío para que se ejecute sólo en el montaje
+
+    useEffect(() => {
+        console.log("Componente montado")
+
+    }) // Sin el array vacío se ejecute sólo en el montaje y en cada actualización
+
+    useEffect(() => {
+        console.log("Componente actualizado")
+
+    }, [contador1]) // Sin el array vacío se ejecute sólo en el montaje y en cada modificación del estado del contador1
 
     return (
         <section className='counter2'>
