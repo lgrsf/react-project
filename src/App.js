@@ -20,7 +20,7 @@ import { useState } from 'react';
 function App() {
 
   const [mostrar, setMostrar] = useState(true)
-
+  console.log(mostrar);
   const mostrarCounter = () => {
     setMostrar(!mostrar)
   }

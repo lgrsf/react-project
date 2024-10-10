@@ -62,15 +62,15 @@ export const Counter2 = () => {
     
         }, []) */ // Se coloca un array vacío para que se ejecute sólo en el montaje
 
-    useEffect(() => {
+/*     useEffect(() => {
         console.log("Componente montado")
 
-    }) // Sin el array vacío se ejecute sólo en el montaje y en cada actualización
+    }) */ // Sin el array vacío se ejecute sólo en el montaje y en cada actualización
 
-    useEffect(() => {
+/*     useEffect(() => {
         console.log("Componente actualizado")
 
-    }, [contador1]) // Sin el array vacío se ejecute sólo en el montaje y en cada modificación del estado del contador1
+    }, [contador1]) */ // Sin el array vacío se ejecute sólo en el montaje y en cada modificación del estado del contador1
 
     return (
         <section className='counter2'>

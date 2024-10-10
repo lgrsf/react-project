@@ -21,13 +21,19 @@ export const Counter = () => {
   // OPTION 2
   const estilo = { fontSize: "50px" };
 
-  useEffect(() => {
+/*   useEffect(() => {
     console.log("Counter montado")
-  }, [])
 
-  useEffect(() => {
+    return () => {
+
+      console.log("Se desmontó el Counter");
+    }
+
+  }, []) */
+
+/*   useEffect(() => {
     console.log("Counter actualizado")
-  }, [contador])
+  }, [contador]) */
 
   return (
     <div className="counter" onClick={() => setContador(contador + 1)}>
