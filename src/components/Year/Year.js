@@ -11,8 +11,8 @@ export const Year = () => {
       <p className="year" onClick={() => setYear(year + 1)}>
         {year}
       </p>
-      <p id="demo" className="demo" onMouseMove={() => document.getElementById("demo").innerHTML = x+=1}>
-        Mouse over me!
+      <p id="demoyear" className="demoyear" onMouseMove={() => document.getElementById("demoyear").innerHTML = x+=1}>
+        Count
       </p>
     </div>
   );
