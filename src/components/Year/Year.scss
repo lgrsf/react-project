@@ -10,3 +10,17 @@
     max-width: 200px;
     margin: 20px auto;
 }
+
+.demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: rgb(17, 13, 101);
+    color: white;
+    border-radius: 10px;
+    max-width: 300px;
+    height: 100px;
+    margin: 20px auto;
+}
