@@ -14,6 +14,7 @@ import { SuperForm } from "./components/SuperForm/SuperForm";
 import { SuperButton } from "./components/SuperButton/SuperButton";
 import Example from "./components/Example/Example";
 import Props from "./components/Props/Props";
+import Year from "./components/Year/Year";
 
 function App() {
   const profesor = {
@@ -59,6 +60,7 @@ function App() {
       <p className="welcome">{contenido2.title}</p>
       <p style={estilo}>{contenido2.subtitle}</p>
       <p style={estilo2}>{contenido2.year}</p>
+      <Year />
       <p className="clock">{clock()}</p>
       <Props text="Props example" text2="Another props example" />
       <SuperForm title="Render Props:" render={SuperButton}></SuperForm>
@@ -69,7 +71,11 @@ function App() {
       {/* <p style={estilo}>{contenido}</p> */}
       <Button />
       <Container>
-        <ItemListContainer nombre={profesor.nombre} rol={profesor.rol} curso={profesor.curso} />
+        <ItemListContainer
+          nombre={profesor.nombre}
+          rol={profesor.rol}
+          curso={profesor.curso}
+        />
       </Container>
       <Nosotros
         titulo={"Hi " + profesor.nombre}
