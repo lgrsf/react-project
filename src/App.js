@@ -15,8 +15,16 @@ import { SuperButton } from "./components/SuperButton/SuperButton";
 import Example from "./components/Example/Example";
 import Props from "./components/Props/Props";
 import Year from "./components/Year/Year";
+import { useState } from 'react';
 
 function App() {
+
+  const [mostrar, setMostrar] = useState(true)
+
+  const mostrarCounter = () => {
+    setMostrar(!mostrar)
+  }
+
   const profesor = {
     nombre: "John Dane",
     rol: "Profesor",
@@ -46,6 +54,19 @@ function App() {
     margin: "0 auto",
   };
 
+  const estilo3 = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "10px",
+    fontWeight: "bold",
+    backgroundColor: "black",
+    color: "white",
+    borderRadius: "10px",
+    maxWidth: "200px",
+    margin: "0 auto",
+  };
+
   const contenido2 = {
     title: "Welcome",
     subtitle: "This is my personal website",
@@ -62,10 +83,13 @@ function App() {
       <p style={estilo2}>{contenido2.year}</p>
       <Year />
       <p className="clock">{clock()}</p>
+      {
+        mostrar ? <Counter /> : <div></div>
+      }
+      <button style={estilo3} className='btn btn-primary' onClick={mostrarCounter}>MOSTRAR/OCULTAR</button>
       <Props text="Props example" text2="Another props example" />
       <SuperForm title="Render Props:" render={SuperButton}></SuperForm>
       <Example />
-      <Counter />
       <Counter2 />
       <Counter3 />
       {/* <p style={estilo}>{contenido}</p> */}
