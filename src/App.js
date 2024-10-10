@@ -18,7 +18,7 @@ import Props from "./components/Props/Props";
 function App() {
   const profesor = {
     nombre: "John Dane",
-    rol: "Profesor de React",
+    rol: "Profesor",
     curso: "React",
   };
 
@@ -69,7 +69,7 @@ function App() {
       {/* <p style={estilo}>{contenido}</p> */}
       <Button />
       <Container>
-        <ItemListContainer nombre={profesor.nombre} curso={profesor.curso} />
+        <ItemListContainer nombre={profesor.nombre} rol={profesor.rol} curso={profesor.curso} />
       </Container>
       <Nosotros
         titulo={"Hi " + profesor.nombre}
