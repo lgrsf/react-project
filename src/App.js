@@ -22,7 +22,7 @@ function App() {
     curso: "React",
   };
 
-  const clock = () => <div>The time is {new Date().toLocaleTimeString()}</div>;
+  const clock = () => <div>The time is {new Date().toTimeString()}</div>;
 
   /* const contenido = "Welcome" */
   const estilo = {

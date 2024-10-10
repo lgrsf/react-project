@@ -4,7 +4,7 @@ export const SuperForm = (props) => {
 
     return <>
         <h1 style={estilo}>{props.title}</h1>
-        {props.render({buttonText:"SuperForm button"})}
+        {props.render({buttonText:"Click me"})}
     </>
 }
 

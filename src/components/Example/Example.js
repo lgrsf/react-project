@@ -16,7 +16,7 @@ function Example() {
       <Overlay target={target.current} show={show} placement="right">
         {(props) => (
           <Tooltip id="overlay-example" {...props}>
-            Hi dude!
+            Soy canaya
           </Tooltip>
         )}
       </Overlay>
