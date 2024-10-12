@@ -3,7 +3,7 @@ import './Counter2.scss'
 
 export const Counter2 = () => {
 
-    const stock = 3
+    const stock = 10
 
     const [contador1, setContador1] = useState({
         contador1: 0,
@@ -53,7 +53,7 @@ export const Counter2 = () => {
                 stock: contador1.stock + 1
             })
         } else {
-            alert("Deleted")
+            alert("There are 0 items in your cart")
         }
     }
 
