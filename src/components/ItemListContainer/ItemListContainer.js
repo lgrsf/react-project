@@ -2,6 +2,13 @@ import Button from "react-bootstrap/Button";
 import "./ItemListContainer.scss";
 
 export const ItemListContainer = ({ nombre, rol, curso }) => {
+
+  const promesa = new Promise ( (resolve, reject) => {
+    resolve ("Promesa cumplida")
+  })
+  
+  console.log(promesa);
+
   const estilo = {
     display: "flex",
     justifyContent: "center",
