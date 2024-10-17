@@ -4,7 +4,8 @@ import "./ItemListContainer.scss";
 export const ItemListContainer = ({ nombre, rol, curso }) => {
 
   const promesa = new Promise ( (resolve, reject) => {
-    resolve ("Promesa cumplida")
+    /* resolve ("Promesa cumplida") */
+    reject ("Promesa rechazada")
   })
   
   console.log(promesa);
