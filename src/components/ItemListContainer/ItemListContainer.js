@@ -2,13 +2,16 @@ import Button from "react-bootstrap/Button";
 import "./ItemListContainer.scss";
 
 export const ItemListContainer = ({ nombre, rol, curso }) => {
+  const promesa = new Promise((resolve, reject) => {
+    resolve("Promesa cumplida");
+    /* reject ("Promesa rechazada") */
+  });
 
-  const promesa = new Promise ( (resolve, reject) => {
-    /* resolve ("Promesa cumplida") */
-    reject ("Promesa rechazada")
-  })
-  
   console.log(promesa);
+
+  promesa.then((data) => {
+    console.log(data)
+  });
 
   const estilo = {
     display: "flex",
@@ -23,8 +26,19 @@ export const ItemListContainer = ({ nombre, rol, curso }) => {
   return (
     <div id="test" style={estilo}>
       <section>
-        <p>Welcome <br/>{nombre} <br/>{rol} del curso de {curso}</p>
-        <Button variant="success" onClick={() => (document.getElementById("test").innerHTML = `Welcome ${nombre}`)}>Log in</Button>
+        <p>
+          Welcome <br />
+          {nombre} <br />
+          {rol} del curso de {curso}
+        </p>
+        <Button
+          variant="success"
+          onClick={() =>
+            (document.getElementById("test").innerHTML = `Welcome ${nombre}`)
+          }
+        >
+          Log in
+        </Button>
       </section>
     </div>
   );
