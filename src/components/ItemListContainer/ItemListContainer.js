@@ -3,14 +3,18 @@ import "./ItemListContainer.scss";
 
 export const ItemListContainer = ({ nombre, rol, curso }) => {
   const promesa = new Promise((resolve, reject) => {
-    resolve("Promesa cumplida");
-    /* reject ("Promesa rechazada") */
+    /* resolve("Promesa cumplida"); */
+    reject ("Promesa rechazada")
   });
 
   console.log(promesa);
 
-  promesa.then((data) => {
-    console.log(data)
+/*   promesa.then((resp) => { // Capturo con resp el string que le pasé a la promesa como parámetro para el caso que se cumpla
+    console.log(resp)
+  }); */
+
+  promesa.catch((error) => { // Capturo con resp el string que le pasé a la promesa como parámetro para el caso que se cumpla
+    console.log(error)
   });
 
   const estilo = {
