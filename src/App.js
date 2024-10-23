@@ -4,7 +4,7 @@ import "./App.css";
 import { Navbar2 } from "./components/Navbar/Navbar2";
 import Servicios from "./components/Servicios/Servicios";
 import { Nosotros } from "./components/Nosotros/Nosotros";
-import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
+/* import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer"; */
 import { ItemListContainer2 } from "./components/ItemListContainer2/ItemListContainer2";
 import Container from "./components/Container/Container";
 import Counter from "./components/Counter/Counter";
