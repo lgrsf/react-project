@@ -1,34 +1,7 @@
 import "./ItemListContainer2.scss";
 import { useEffect, useState } from 'react';
 import Spinner from 'react-bootstrap/Spinner';
-
-const productos = [
-    {
-        id: 1,
-        nombre: "Producto 1",
-        desc: "Una descripción",
-        precio: 1200,
-        img: 'https://placehold.co/400',
-        alt: 'Imagen'
-    },
-    {
-        id: 2,
-        nombre: "Producto 2",
-        desc: "Una descripción",
-        precio: 1500,
-        img: 'https://placehold.co/400',
-        alt: 'Imagen'
-    },
-    {
-        id: 3,
-        nombre: "Producto 3",
-        desc: "Una descripción",
-        precio: 1800,
-        img: 'https://placehold.co/400',
-        alt: 'Imagen'
-    },
-]
-
+import { pedirDatos } from "../mock/pedirDatos";
 
 export const ItemListContainer2 = () => {
 
@@ -58,20 +31,11 @@ export const ItemListContainer2 = () => {
         nombre: item.nombre,
     })));
 
-    const pedirDatos = () => {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(productos)
-            }, 2000)
-        })
-    }
-
     useEffect(() => {
         setLoading(true)
         pedirDatos()
             .then((resp) => {
                 setItems(resp);
-                setLoading(false)
             })
             .catch((error) => {
                 console.log("ERROR", error);
