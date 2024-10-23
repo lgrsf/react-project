@@ -2,6 +2,7 @@ import "./ItemListContainer2.scss";
 import { useEffect, useState } from 'react';
 import Spinner from 'react-bootstrap/Spinner';
 import { pedirDatos } from "../mock/pedirDatos";
+import ItemList from "../ItemList/ItemList";
 
 export const ItemListContainer2 = () => {
 
@@ -57,19 +58,8 @@ export const ItemListContainer2 = () => {
                     ? <Spinner animation="border" role="status">
                         <span className="visually-hidden">Loading...</span>
                     </Spinner>
-                    : <>
-                        {
-                            items.map((item) => (
-                                <div key={item.id}>
-                                    <h2>{item.nombre}</h2>
-                                    <img src={item.img} alt={item.alt}></img>
-                                    <p>{item.desc}</p>
-                                    <h4>Precio: ${item.precio}</h4>
-                                    <hr />
-                                </div>
-                            ))
-                        }
-                    </>
+                    :
+                    <ItemList items={items}/>
             }
 
         </div>
